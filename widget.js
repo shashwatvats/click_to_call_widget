@@ -3,7 +3,8 @@ $(document).ready(function(){
 	var html_code=`<div>
 		<button style="position: fixed; right: 5%;top:85%;border: none;color: black;text-align: center;border: 2px solid #008CBA;
 		border-radius: 10px;;padding: 10px 15px;background-color:white; font-weight: bold;" 
-		onMouseOver="this.style.backgroundColor='#008CBA'" onMouseOut="this.style.backgroundColor='white'">Call Now</button>
+		onMouseOver="this.style.backgroundColor='#008CBA'" onMouseOut="this.style.backgroundColor='white'"><span class="fa fa-phone-square"
+     ></span>Call Now</button>
 	</div>`;
 
 	var popup_html=`<div class="modal fade" id="myModal">
