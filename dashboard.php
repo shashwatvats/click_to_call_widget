@@ -48,7 +48,7 @@ $time1=date_create(date("Y-m-d H:i:s"));
 			       <td><?php echo $row['name']; ?></td>
 			       <td><?php echo $row['email']; ?></td>
 			       <td><?php echo $row['contact_number']; ?></td>
-			       <td><?php echo $timediff->format('%h hour %i minute %s second ago');  ?></td>
+			       <td><?php echo $timediff->format('%h hour %i minute %s second ago'); ?></td>
 			    </tr>
       		
       		<?php
