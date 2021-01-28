@@ -1,10 +1,10 @@
 $(document).ready(function(){
 	
 	var html_code=`<div>
-		<button style="position: fixed; right: 5%;top:85%;border: none;color: black;text-align: center;border: 2px solid #008CBA;
-		border-radius: 10px;;padding: 10px 15px;background-color:white; font-weight: bold;" 
-		onMouseOver="this.style.backgroundColor='#008CBA'" onMouseOut="this.style.backgroundColor='white'"><span class="fa fa-phone-square"
-     ></span>Call Now</button>
+		<button style="position: fixed; right: 5%;top:85%;border: none;color: black;border: 2px solid #008CBA;
+		border-radius: 10px;padding: 10px 15px;background-color:white; font-weight: bold;" 
+		onMouseOver="this.style.backgroundColor='#008CBA'" onMouseOut="this.style.backgroundColor='white'"><i class="fa fa-phone fa-lg" 
+    aria-hidden="true"></i>Call Now</button>
 	</div>`;
 
 	var popup_html=`<div class="modal fade" id="myModal">
@@ -19,25 +19,31 @@ $(document).ready(function(){
         
         <!-- Modal body -->
         <div class="modal-body">
-          <a href="tel:+918700279328" class="btn btn-success" id="call_now" role="button">Call Now</a>
-          <button type="button" id="request_btn" class="btn btn-primary">Request A Call</button>
+          <a href="tel:+918700279328" class="btn btn-success" id="call_now" role="button"><i class="fa fa-phone"></i> Call Now</a>
+          <button type="button" id="request_btn" class="btn btn-primary"><i class="fa fa-upload"></i> Request A Call</button>
         </div>
        	
         <div id="myformdiv" class="modal-body">
-          <form id="myform">
-		    <div class="form-group">
-		      <label for="name">Name:</label>
-		      <input type="text" class="form-control" id="name" name="name" required>
+        <form id="myform">
+		    <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span>
+          </div>
+		      <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" required>
 		    </div>
-		    <div class="form-group">
-		      <label for="email">Email:</label>
-		      <input type="email" class="form-control" id="email" name="email" required>
+		    <div class="input-group mb-3">
+		      <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-envelope fa-fw"></i></span>
+          </div>
+		      <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email" required>
 		    </div>
-		    <div class="form-group">
-		      <label for="number">Phone Number:</label>
-		      <input type="number" class="form-control" id="number" name="number" required>
+		    <div class="input-group">
+		      <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-tablet fa-fw"></i></span>
+          </div>
+		      <input type="number" class="form-control" id="number" name="number" placeholder="Enter Your Phone Number" required>
 		    </div><br>
-		    <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+		    <button type="submit" id="submit" class="btn btn-info">Submit <i class="fa fa-send"></i></button>
 		  </form>
         </div>
         <p id="success"></p>
@@ -88,7 +94,7 @@ $(document).ready(function(){
 
       setInterval(function(){
       $('#success').html('');
-    },10000);
+    },2000);
 
   	});
 });
