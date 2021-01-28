@@ -24,7 +24,7 @@ $(document).ready(function(){
         </div>
        	
         <div id="myformdiv" class="modal-body">
-        <form id="myform">
+        <form id="myform" class="was-validated">
 		    <div class="input-group mb-3">
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span>
@@ -94,7 +94,9 @@ $(document).ready(function(){
 
       setInterval(function(){
       $('#success').html('');
-    },2000);
+    },3000);
 
   	});
+
+
 });
